@@ -39,7 +39,7 @@ const AppointmentForm = () => {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:5000/api/v1/user/doctors",
+          "https://hospital-management-system-dkxp.onrender.com/api/v1/user/doctors",
           { withCredentials: true }
         );
 
@@ -72,7 +72,7 @@ const AppointmentForm = () => {
       const hasVisitedBool = Boolean(hasVisited);
 
       const { data } = await axios.post(
-        "http://localhost:5000/api/v1/appointment/post",
+        "https://hospital-management-system-dkxp.onrender.com/api/v1/appointment/post",
         {
           firstName,
           lastName,

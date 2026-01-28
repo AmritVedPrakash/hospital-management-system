@@ -12,7 +12,7 @@ const MessageForm = () => {
   const handleMessage = async(e) => {
     e.preventDefault(); // Prevent the default form submission behavior
     try{
-      await axios.post('http://localhost:5000/api/v1/message/send',
+      await axios.post('https://hospital-management-system-dkxp.onrender.com/api/v1/message/send',
         {firstName, lastName, email, phone, message},
         {
           withCredentials:true,
